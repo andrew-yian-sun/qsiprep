@@ -55,7 +55,8 @@ The CUDA runtime version 9.1 is included in the QSIPrep docker image.
 The CUDA version of eddy is dramatically faster than the openmp version.
 Information on running Docker with CUDA enabled can be found on
 `dockerhub <https://github.com/NVIDIA/nvidia-docker/wiki/CUDA>`_. If running with singularity,
-the call to singularity should include ``--nv``. To enable CUDA, see :ref:`configure_eddy`.
+the call to singularity should include ``--nv``. To enable CUDA, see :ref:`configure_eddy`. If running with docker,
+the ``docker run`` command should include ``--gpus`` https://docs.docker.com/engine/reference/commandline/run/#access-an-nvidia-gpu
 
 Debugging
 =========
